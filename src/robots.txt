@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /admin/
 Allow: /
 
-Sitemap: https://www.pixelgarage.net/sitemap.xml
+Sitemap: https://www.dripdetailingkc.com/sitemap.xml
