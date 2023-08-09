@@ -11,24 +11,54 @@ eleventyNavigation:
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/css/reviews.css">
     <link rel="stylesheet" href="/css/local.css" />
     <link rel="stylesheet" href="/css/critical.css" />
+
+    <!-- Script for Netlify Identity -->
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script defer>
+        if (window.netlifyIdentity) {
+            window
+                .netlifyIdentity
+                .on('init', (user) => {
+                    if (!user) {
+                        window
+                            .netlifyIdentity
+                            .on('login', () => {
+                                document.location.href = '/admin/';
+                            });
+                    }
+                });
+        }
+    </script>
 {% endblock %}
 
 {% block body %}
 
     <!-- ============================================ -->
-    <!--                    LANDING                   -->
+    <!--                    Hero                      -->
     <!-- ============================================ -->
 
-    <section id="int-hero">
-        <h1 id="home-h">Services</h1>
-        <picture class="cs-picture">
+    <section id="hero">
+        <div class="cs-container">
+            <div class="cs-flex-group">
+                <span class="cs-topper">Drip Detailing KC</span>
+                <h1 class="cs-title">Our Services</h1>
+            </div>
+        </div>
 
-            <img aria-hidden="true" decoding="async" src="/assets/images/hero-1.jpg" alt="fresh car" width="2500" height="1667" loading="eager">
+        <!-- Background Image -->
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="/assets/images/hero-2.jpg">
+            <source media="(min-width: 601px)" srcset="/assets/images/hero-3.jpg">
+            <img aria-hidden="true" decoding="async" src="/assets/images/hero-1.jpg" alt="clean car" width="2500" height="1667" loading="eager">
         </picture>
     </section>
+
+    <!-- ============================================ -->
+    <!--                  Services                    -->
+    <!-- ============================================ -->
+
     <section id="services" class="services">
         <!-- Get Icons From flaticon.com -->
         <div class="card">
@@ -44,6 +74,7 @@ eleventyNavigation:
             <p>Interior Deep Clean: $165-$250 (Interior Vacuum, clean interior windows, clean & dress interior surfaces & panels, vacuum trunk, clean & condition leather/fabrics, shampoo carpets, floor mats & seats, air freshener)</p>
         </div>
     </section>
+
     <section id="services" class="services">
         <!-- Get Icons From flaticon.com -->
         <div class="card">
