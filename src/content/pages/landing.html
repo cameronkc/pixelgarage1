@@ -1,0 +1,60 @@
+---
+title: 'Mobile Detailing'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/hero-1.jpg'
+permalink: 'landing/'
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/css/contact.css">
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero">
+        <h1 id="home-h">Contact Us</h1>
+        <picture>
+            <img aria-hidden="true" decoding="async" src="/assets/images/hero-1.jpg" alt="Kansas City Car Detailing" loading="eager" width="2500" height="1667">
+        </picture>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                Contact Form                  -->
+    <!-- ============================================ -->
+
+    <section id="cs-contact">
+        <div class="cs-container">
+                <div class="cs-content">
+                    <span class="cs-topper">Contact</span>
+                    <h2 class="cs-title">Get in Touch</h2>
+                    <p class="cs-text">
+                        Your vehicle's shine and satisfaction are just a message away! At Drip Detailing KC, we're committed to delivering unparalleled auto detailing right to your doorstep. Whether you have inquiries, need a personalized quote, or are ready to book an appointment, our dedicated team is here to assist. Reach out directly via call, text, or email. Let's connect and give your car the VIP treatment it deserves!
+                        <br>
+                        <br>
+                        <strong>CALL OR TEXT TODAY! (816) 853-3490</strong>
+                        <br>
+                        <strong>contact@dripdetailingkc.com</strong>
+                    </p>
+                </div>
+            <div class="cs-right-section">
+                <!--Email-->
+                <span class="cs-header">Email</span>
+                <a class="cs-link" href="mailto:contact@dripdetailingkc.com">{{client.email}}</a>
+                <!--Phone-->
+                <span class="cs-header">Phone</span>
+                <a class="cs-link" href="tel:{{client.phoneForTel}}">{{client.phoneFormatted}}</a>
+                <!-- Background Image-->
+                <picture class="cs-bg-picture">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/cta-1.jpg" alt="interior detailing" loading="lazy" width="2500" height="1667">
+                </picture>
+
+            </div>
+        </div>
+    </section>
+{% endblock %}
