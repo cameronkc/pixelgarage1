@@ -9,6 +9,7 @@ permalink: 'landing/'
 
 {% block head %}
     <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/about.css">
 {% endblock %}
 
 {% block body %}
@@ -425,6 +426,51 @@ span.FITB-inptCont[data-type=radiobox] label,
                 </div>
          </div>
     </section>
-    {% include "components/about.html" %}
+    
+    <section id="int-hero">
+        <h1 id="home-h">About Us</h1>
+        <picture>
+            <img aria-hidden="true" decoding="async" src="/assets/images/hero-1.jpg" alt="clean car" loading="eager" width="2500" height="1667">
+        </picture>
+
+    </section>
+
+    <!-- ============================================ -->
+    <!--                 Side By Side                 -->
+    <!-- ============================================ -->
+
+    <section id="sbs">
+        <div class="cs-container">
+            <!-- Left Image Section -->
+            <div class="cs-left">
+                <picture class="cs-picture cs-picture1">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/about-1.jpg" alt="cabinets" loading="lazy" width="400" height="563">
+                </picture>
+                <picture class="cs-picture cs-picture2">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/about-2.jpg" alt="house" loading="lazy" width="400" height="563">
+                </picture>
+            </div>
+            <!-- Right Content Section-->
+            <div class="cs-right">
+                <span class="cs-topper">About Us</span>
+                <h2 class="cs-title">Redefining Auto Detailing in Kansas City</h2>
+                <p class="cs-text">
+                    In the bustling heart of Kansas City, we recognized a need for convenient, high-quality auto detailing. Our mobile service is designed for those who value their time and their vehicle. Every car, truck, or SUV we touch is treated with precision, ensuring a showroom shine every time.
+                </p>
+                <p class="cs-text">
+                    Detailing isn't just a service to us; it's a craft. Our team combines expertise with the best products on the market to rejuvenate your vehicle, both inside and out. From meticulous exterior polishing to deep interior cleaning, we leave no stone unturned.
+                </p>
+                <div class="cs-flex-group">
+                    <p class="cs-flex-p">
+                        As a proud local business, our community is at the heart of everything we do. We're not just serving clients; we're serving neighbors, friends, and fellow Kansas City residents. Your satisfaction is our top priority, and we strive to exceed expectations with every service.
+                    </p>
+                    <span class="cs-name">Cameron McDowell</span>
+                    <span class="cs-job">Co-Founder</span>
+                    <img class="cs-quote-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel" width="136" height="77">
+                </div>
+                <!-- <a href="/projects" class="cs-button-solid">Our Projects</a> -->
+            </div>
+        </div>
+    </section>
     {% include "components/cta.html" %}
 {% endblock %}
