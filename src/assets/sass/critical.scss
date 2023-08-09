@@ -252,7 +252,6 @@
 		background: #fff;
 		width: 90%;
 		max-width: calc(1320 / 16 * 1em);
-		padding-top: 4em;
 		padding: calc(50 / 16 * 1em) calc(20 / 16 * 1em);
 		border-top: calc(6 / 16 * 1em) solid var(--primary);
 		box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
@@ -320,6 +319,91 @@
 /* Large Desktop */
 @media only screen and (min-width: 1300px) {
 	.services {
+		padding: calc(50 / 16 * 1em) calc(80 / 16 * 1em);
+
+		.card {
+			max-width: calc(357 / 16 * 1em);
+		}
+	}
+}
+
+@media only screen and (min-width: 0em) {
+	.services-1 {
+		border-radius: calc(5 / 16 * 1em);
+		margin: auto;
+		margin-top: 5em;
+		position: relative;
+		z-index: 100;
+		background: #fff;
+		width: 90%;
+		max-width: calc(1320 / 16 * 1em);
+		padding: calc(50 / 16 * 1em) calc(20 / 16 * 1em);
+		border-top: calc(6 / 16 * 1em) solid var(--primary);
+		box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
+		margin-bottom: calc(50 / 16 * 1em);
+		.card {
+			display: block;
+			width: 100%;
+			max-width: calc(357 / 16 * 1em);
+			margin: auto;
+			margin-bottom: calc(50 / 16 * 1em);
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+
+			picture {
+				background: var(--primary);
+				width: calc(88 / 16 * 1em);
+				height: calc(88 / 16 * 1em);
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin: auto;
+				margin-bottom: calc(23 / 16 * 1em);
+				border-radius: 50%;
+
+				img {
+					width: calc(48 / 16 * 1em);
+					height: calc(48 / 16 * 1em);
+				}
+			}
+			h2 {
+				text-align: center;
+				font-size: calc(32 / 16 * 1em);
+				line-height: 27/20em;
+				font-weight: 700;
+				color: #1a1a1a;
+				margin-bottom: 13/20em;
+			}
+			p {
+				text-align: center;
+				line-height: 24/18em;
+				width: 100%;
+				opacity: 0.7;
+			}
+		}
+	}
+}
+
+/* Inbetween */
+@media only screen and (min-width: 768px) {
+	.services-1 {
+		font-size: min(1.8vw, 1em);
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		width: 98%;
+
+		.card {
+			margin: 0;
+			max-width: calc(325 / 16 * 1em);
+		}
+	}
+}
+
+/* Large Desktop */
+@media only screen and (min-width: 1300px) {
+	.services-1 {
 		padding: calc(50 / 16 * 1em) calc(80 / 16 * 1em);
 
 		.card {
