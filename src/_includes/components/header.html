@@ -29,7 +29,6 @@
                         {% set hasChild = entry.children.length %}
 
                         <!-- If this page is a dropdown, give it the appropriate classes, icons and accessibility attributes-->
-                        <li class="cs-li {% if hasChild %} cs-dropdown {% endif %}" {% if hasChild %} tabindex="0"{% endif %}>
 
                             <!-- Similarly, if the link is active, apply the necessary classes -->
                             <a href="{{ entry.url }}" class="cs-li-link {% if entry.url == page.url %} cs-active {% endif %}">
