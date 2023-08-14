@@ -24,6 +24,8 @@ permalink: 'contact/'
         </picture>
     </section>
 
+    <!-- Start Square Appointments Embed Code --><script src='https://square.site/appointments/buyer/widget/may0m8c7z61gio/LP104NJHNWZXY.js'></script><!-- End Square Appointments Embed Code -->
+
     <!-- ============================================ -->
     <!--                Contact Form                  -->
     <!-- ============================================ -->
@@ -42,7 +44,19 @@ permalink: 'contact/'
                         <strong>contact@dripdetailingkc.com</strong>
                     </p>
                 </div>
-            <!-- Start Square Appointments Embed Code --><script src='https://square.site/appointments/buyer/widget/may0m8c7z61gio/LP104NJHNWZXY.js'></script><!-- End Square Appointments Embed Code -->
+            <div class="cs-right-section">
+                <!--Email-->
+                <span class="cs-header">Email</span>
+                <a class="cs-link" href="mailto:contact@dripdetailingkc.com">{{client.email}}</a>
+                <!--Phone-->
+                <span class="cs-header">Phone</span>
+                <a class="cs-link" href="tel:{{client.phoneForTel}}">{{client.phoneFormatted}}</a>
+                <!-- Background Image-->
+                <picture class="cs-bg-picture">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/cta-1.jpg" alt="interior detailing" loading="lazy" width="2500" height="1667">
+                </picture>
+
+            </div>
         </div>
     </section>
 {% endblock %}
